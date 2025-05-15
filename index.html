@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de Produção - Padaria</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Produção para Padaria</h1>
+
+    <label for="produto">Produto:</label>
+    <select id="produto">
+      <option value="pao">Pão Francês</option>
+      <option value="leite">Pão de Leite</option>
+      <option value="coco">Pão de Coco</option>
+    </select>
+
+    <label for="quantidade">Quantidade a produzir:</label>
+    <input type="number" id="quantidade" placeholder="Ex: 100">
+
+    <button onclick="calcular()">Calcular Ingredientes</button>
+
+    <div id="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
